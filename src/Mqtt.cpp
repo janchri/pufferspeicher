@@ -1,5 +1,6 @@
 #include "Mqtt.h"
 #include "Network.h"
+#include "Sensors.h"
 #include "defaults.h"
 
 MqttClass Mqtt;
@@ -11,7 +12,9 @@ MqttClass::MqttClass()
 
 void MqttClass::init()
 {
-    mqttClient = PubSubClient(wiFiClient);
+    mqttClient.setServer(MQTT_SERVER, MQTT_PORT);
+    mqttClient.setCredentials(MQTT_USER,MQTT_PASSWORD);
+    mqttClient.setClientId(HOSTNAME);
     setup();
 }
 
@@ -19,16 +22,14 @@ void MqttClass::setup()
 {
     if (Network.isConnected())
     {
-        mqttClient.setServer(MQTT_SERVER, MQTT_PORT);
-        if (mqttClient.connect(HOSTNAME, MQTT_USER, MQTT_PASSWORD))
+        Serial.println("[MQTT] : Connecting to MQTT...");
+        if (!mqttClient.connect())
         {
-            Serial.println("[MQTT] : Reconnected to MQTT broker");
+            Serial.println("[MQTT] : Connecting failed.");
         }
         else
         {
-            Serial.print("[MQTT] : Failed to reconnect to MQTT broker, rc=");
-            Serial.print(mqttClient.state());
-            Serial.println();
+            Serial.println("[MQTT] : Connected.");
         }
     }
     else
@@ -43,20 +44,38 @@ void MqttClass::loop()
     {
         if (!mqttClient.connected())
         {
-            Serial.println(F("[MQTT] : Not connected"));
+            Serial.println(F("[MQTT] : Not connected."));
             setup();
         }
         else
         {
-            Serial.println(F("[MQTT] : Connected"));
+            Serial.println(F("[MQTT] : Connected."));
         }
         lastTimerReconnect = millis();
     }
-    if ((millis() - lastTimerPublish) > MQTT_TIMEOUT_PUBLISH && mqttClient.connected())
+    if ((millis() - lastTimerPublish) > MQTT_TIMEOUT_PUBLISH)
     {
-        String topic = HOSTNAME;
-        topic += "/z1";
-        mqttClient.publish(topic.c_str(), String(lastTimerPublish).c_str());
+        Serial.println(F("[MQTT] : Publish data"));
+        uint8_t count = 0;
+        for (auto data : Sensors.sensor_data)
+        {
+            String topic = HOSTNAME;
+            topic += "/sensor/";
+            char addr[17];
+            sprintf(addr, "%02X%02X%02X%02X%02X%02X%02X%02X",
+                    Sensors.sensor_addresses[count][0],
+                    Sensors.sensor_addresses[count][1],
+                    Sensors.sensor_addresses[count][2],
+                    Sensors.sensor_addresses[count][3],
+                    Sensors.sensor_addresses[count][4],
+                    Sensors.sensor_addresses[count][5],
+                    Sensors.sensor_addresses[count][6],
+                    Sensors.sensor_addresses[count][7]);
+            topic += String(addr);
+            mqttClient.publish(topic.c_str(), 0, true, String(Sensors.sensor_data[count]).c_str());
+            count++;
+        }
+
         lastTimerPublish = millis();
     }
 }

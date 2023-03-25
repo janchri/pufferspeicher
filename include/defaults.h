@@ -9,9 +9,9 @@
 
 #define HOSTNAME "Puffer"
 
-#define WIFI_SSID ""
-#define WIFI_PASSWORD ""
-#define WIFI_TIMEOUT_RECONNECT 5000
+#define WIFI_SSID "FRITZ!Box 7590 HC"
+#define WIFI_PASSWORD "04887905256483615871"
+#define WIFI_TIMEOUT_RECONNECT 10000
 
 #define AP_SSID "Puffer"
 #define AP_PASSWORD ""
@@ -23,6 +23,7 @@
 #define MQTT_PORT 1883
 #define MQTT_USER ""
 #define MQTT_PASSWORD ""
+#define MQTT_RETAIN 0
 
 #define HTTP_PORT 80
 

@@ -15,16 +15,17 @@ void setup()
 
   Network.init();
   Ntp.init();
+  WebApi.init();
   Sensors.init();
 
   Mqtt.init();
-  WebApi.init();
 }
 
 void loop()
 {
   Network.loop();
   Sensors.loop();
-  Mqtt.loop();
   WebApi.loop();
+
+  Mqtt.loop();
 }

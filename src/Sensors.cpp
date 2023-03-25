@@ -23,9 +23,12 @@ void SensorsClass::loop()
     {
         tmp_sensor.requestTemperatures();
         Serial.print(F("[Sensors] : "));
+        uint8_t count = 0;
         for(auto address : sensor_addresses){
             Serial.print(tmp_sensor.getTempC(address.data()));
             Serial.print(F(" | "));
+            sensor_data[count] = tmp_sensor.getTempC(address.data());
+            count++;
         }
         Serial.println();
         lastSensorRead = millis();

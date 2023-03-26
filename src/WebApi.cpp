@@ -29,18 +29,21 @@ void WebApiClass::init()
     _server.addHandler(&_ws);
     using std::placeholders::_1;
     _server.on("/api/puffer", HTTP_GET, std::bind(&WebApiClass::onSensorsGet, this, _1));
-    _server.on("/", HTTP_GET, [](AsyncWebServerRequest *request)
-               { request->send(200, "text/plain", "Hello, world"); });
+
+    _server.serveStatic("/", SPIFFS, "/").setDefaultFile("index.html");
+    
     _server.begin();
 }
 
 void WebApiClass::loop()
 {
-    if (millis() - _lastWsCleanup > 1000) {
+    if (millis() - _lastWsCleanup > 1000)
+    {
         _ws.cleanupClients();
         _lastWsCleanup = millis();
     }
-    if (_ws.count() == 0) {
+    if (_ws.count() == 0)
+    {
         return;
     }
     if (millis() - _lastWsPublish > WS_TIMEOUT_PUBLISH)
@@ -69,7 +72,8 @@ void WebApiClass::onSensorsGet(AsyncWebServerRequest *request)
     request->send(response);
 }
 
-void WebApiClass::generateJsonResponse(JsonVariant& root){
+void WebApiClass::generateJsonResponse(JsonVariant &root)
+{
     JsonArray sensor = root.createNestedArray(F("sensor"));
 
     uint8_t count = 0;

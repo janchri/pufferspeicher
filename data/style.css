@@ -1,0 +1,25 @@
+html {
+    font-family: Helvetica;
+    display: inline-block;
+    text-align: center;
+}
+
+div#main {
+    width: min-content;
+}
+
+div#puffer {
+    background-image: url('puffer.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 223px;
+    height: 453px;
+}
+
+div#sensors {
+    padding-top: 3px;
+}
+
+p.sensor {
+    padding-top: 3px
+}

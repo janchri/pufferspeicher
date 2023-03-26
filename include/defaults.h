@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Arduino.h>
+#include <SPIFFS.h>
 
 #define SERIAL_BAUDRATE 115200
 
@@ -30,5 +31,5 @@
 #define SENSORS_TIMEOUT_READ 5000
 #define SENSORS_TIMEOUT_SEARCH 100000
 
-#define WS_TIMEOUT_PUBLISH 10000
+#define WS_TIMEOUT_PUBLISH 60000
 

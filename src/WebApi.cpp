@@ -1,6 +1,7 @@
 #include "WebApi.h"
 #include "defaults.h"
 #include "Sensors.h"
+#include <AsyncElegantOTA.h>
 
 WebApiClass WebApi;
 
@@ -30,8 +31,9 @@ void WebApiClass::init()
     using std::placeholders::_1;
     _server.on("/api/puffer", HTTP_GET, std::bind(&WebApiClass::onSensorsGet, this, _1));
 
-    _server.serveStatic("/", SPIFFS, "/").setDefaultFile("index.html");
-    
+    _server.serveStatic("/", LittleFS, "/").setDefaultFile("index.html");
+
+    AsyncElegantOTA.begin(&_server); 
     _server.begin();
 }
 

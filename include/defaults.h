@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Arduino.h>
-#include <SPIFFS.h>
+#include "LittleFS.h"
 
 #define SERIAL_BAUDRATE 115200
 

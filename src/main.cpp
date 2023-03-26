@@ -15,10 +15,10 @@ void setup()
     yield();
 
   // Initialize SPIFFS
-  if(!SPIFFS.begin(true)){
-    Serial.println("[SPIFFS] : An Error has occurred while mounting SPIFFS");
-    return;
+  if (!LittleFS.begin()) {
+    Serial.println("[LittleFS] : An error has occurred while mounting.");
   }
+  Serial.println("[LittleFS] :  ... successfully mounted.");
 
   Network.init();
   Ntp.init();

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <script>
+    // Let us open a web socket
+    const ws = new WebSocket("ws://192.168.178.51/ws", "chat");
+    ws.onopen = function (openEvent) {
+      console.log("WebSocket ist mit dem " + ws.protocol + " Protokoll geöffnet");
+      ws.send("Hello Server!");
+    }
+    ws.onmessage = function (messageEvent) {
+      console.log(messageEvent.data);
+      var sensors = JSON.parse(messageEvent.data);
+      for (let i in sensors.sensor) {
+        document.getElementById(sensors.sensor[i].sensor_id).innerHTML = sensors.sensor[i].sensor_tmp;
+      }
+    };
+    ws.onclose = function (closeEvent) {
+      console.log("WebSocket wurde geschlossen");
+    };
+  </script>
+  <style>
+    div#main{
+      width: min-content;
+    }
+    div#puffer {
+      background-image: url('/home/christoph/git/pufferspeicher/www/puffer.jpg');
+      background-repeat: no-repeat;
+      background-position: top center;
+      width: 223px;
+      height: 453px;
+    }
+    div#sensors{
+      padding-top: 3px;
+    }
+
+    p.sensor{
+      text-align: center;
+      padding-top: 3px
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Der Super Puffer</h1>
+  <div id="main">
+    <div id="puffer">
+      <div id="sensors">
+        <p class="sensor" , id="28E8A6686022069D"></p>
+        <p class="sensor" , id="289CDB22602206A3"></p>
+        <p class="sensor" , id="2842605C602206F6"></p>
+        <p class="sensor" , id="2861516D60220697"></p>
+        <p class="sensor" , id="2869D16A6022067B"></p>
+        <p class="sensor" , id="28D9F3696022068F"></p>
+        <p class="sensor" , id="281D649A602206D3"></p>
+        <p class="sensor" , id="286BA98C60220606"></p>
+        <p class="sensor" , id="28F713436022069B"></p>
+        <p class="sensor" , id="288FCA0F602206FD"></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

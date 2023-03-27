@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="662.1004"
+   height="1455.6293"
+   overflow="hidden"
+   version="1.1"
+   id="svg181"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5">
+    <clipPath
+       id="clip0">
+      <rect
+         x="1908"
+         y="163"
+         width="665"
+         height="1456"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     transform="translate(-1908.1896,-163.18958)"
+     id="g179">
+    <path
+       d="M 1912.98,348.383 C 1912.98,188.898 2041.26,165 2200.92,165 v 0 c 159.65,0 289.08,22.752 289.08,182.237 -0.61,351.721 -1.22,703.443 -1.83,1055.163 0,159.49 -127.6,149.48 -287.25,149.48 v 0 c -159.66,0 -290.92,10.01 -290.92,-149.48 0,-269.78 2.98,-784.241 2.98,-1054.017 z"
+       stroke="#000000"
+       stroke-width="3.62083"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path7" />
+    <path
+       d="m 2179,1616 h 42.4"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9" />
+    <path
+       d="m 2464,295 c 0,-8.727 -6.61,-16 -14.54,-16 h -52.92 c -7.93,0 -14.54,7.273 -14.54,16 0,8.727 6.61,16 14.54,16 h 52.92 c 7.93,0 14.54,-7.273 14.54,-16 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path11" />
+    <path
+       d="m 2464,295 c 0,-8.727 -6.61,-16 -14.54,-16 -7.93,0 -14.53,7.273 -14.53,16 0,8.727 6.6,16 14.53,16 7.93,0 14.54,-7.273 14.54,-16 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path13" />
+    <path
+       d="m 2464,295 c 0,-8.727 -6.61,-16 -14.54,-16 h -52.92 c -7.93,0 -14.54,7.273 -14.54,16 0,8.727 6.61,16 14.54,16 h 52.92 c 7.93,0 14.54,-7.273 14.54,-16 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15" />
+    <path
+       d="m 2464,295 c 0,-8.727 -6.61,-16 -14.54,-16 -7.93,0 -14.53,7.273 -14.53,16 0,8.727 6.6,16 14.53,16 7.93,0 14.54,-7.273 14.54,-16 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path17" />
+    <path
+       d="m 2464,1136.5 c 0,-9 -6.61,-16.5 -14.54,-16.5 h -52.92 c -7.93,0 -14.54,7.5 -14.54,16.5 0,9 6.61,16.5 14.54,16.5 h 52.92 c 7.93,0 14.54,-7.5 14.54,-16.5 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path19" />
+    <path
+       d="m 2464,1136.5 c 0,-9 -6.61,-16.5 -14.54,-16.5 -7.93,0 -14.53,7.5 -14.53,16.5 0,9 6.6,16.5 14.53,16.5 7.93,0 14.54,-7.5 14.54,-16.5 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path21" />
+    <path
+       d="m 2464,1136.5 c 0,-9 -6.61,-16.5 -14.54,-16.5 h -52.92 c -7.93,0 -14.54,7.5 -14.54,16.5 0,9 6.61,16.5 14.54,16.5 h 52.92 c 7.93,0 14.54,-7.5 14.54,-16.5 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path23" />
+    <path
+       d="m 2464,1136.5 c 0,-9 -6.61,-16.5 -14.54,-16.5 -7.93,0 -14.53,7.5 -14.53,16.5 0,9 6.6,16.5 14.53,16.5 7.93,0 14.54,-7.5 14.54,-16.5 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path25" />
+    <path
+       d="m 2464,858 c 0,-8.727 -6.61,-16 -14.54,-16 h -52.92 c -7.93,0 -14.54,7.273 -14.54,16 0,8.728 6.61,16 14.54,16 h 52.92 c 7.93,0 14.54,-7.272 14.54,-16 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path27" />
+    <path
+       d="m 2464,858 c 0,-8.727 -6.61,-16 -14.54,-16 -7.93,0 -14.53,7.273 -14.53,16 0,8.728 6.6,16 14.53,16 7.93,0 14.54,-7.272 14.54,-16 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path29" />
+    <path
+       d="m 2464,858 c 0,-8.727 -6.61,-16 -14.54,-16 h -52.92 c -7.93,0 -14.54,7.273 -14.54,16 0,8.728 6.61,16 14.54,16 h 52.92 c 7.93,0 14.54,-7.272 14.54,-16 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path31" />
+    <path
+       d="m 2464,858 c 0,-8.727 -6.61,-16 -14.54,-16 -7.93,0 -14.53,7.273 -14.53,16 0,8.728 6.6,16 14.53,16 7.93,0 14.54,-7.272 14.54,-16 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path33" />
+    <path
+       d="m 2466,1426 c 0,-8.73 -6.69,-16 -14.71,-16 h -53.58 c -8.02,0 -14.71,7.27 -14.71,16 0,8.73 6.69,16 14.71,16 h 53.58 c 8.02,0 14.71,-7.27 14.71,-16 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path35" />
+    <path
+       d="m 2466,1426 c 0,-8.73 -6.69,-16 -14.71,-16 -8.03,0 -14.72,7.27 -14.72,16 0,8.73 6.69,16 14.72,16 8.02,0 14.71,-7.27 14.71,-16 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path37" />
+    <path
+       d="m 2466,1426 c 0,-8.73 -6.69,-16 -14.71,-16 h -53.58 c -8.02,0 -14.71,7.27 -14.71,16 0,8.73 6.69,16 14.71,16 h 53.58 c 8.02,0 14.71,-7.27 14.71,-16 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path39" />
+    <path
+       d="m 2466,1426 c 0,-8.73 -6.69,-16 -14.71,-16 -8.03,0 -14.72,7.27 -14.72,16 0,8.73 6.69,16 14.72,16 8.02,0 14.71,-7.27 14.71,-16 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path41" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 V 14.536 C 32,6.60557 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,278)"
+       id="path43" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 C 32,6.60557 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,278)"
+       id="path45" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 V 14.536 C 32,6.60557 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,278)"
+       id="path47" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 C 32,6.60557 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,278)"
+       id="path49" />
+    <path
+       d="m 2466,574 c 0,-8.727 -6.69,-16 -14.71,-16 h -53.58 c -8.02,0 -14.71,7.273 -14.71,16 0,8.727 6.69,16 14.71,16 h 53.58 c 8.02,0 14.71,-7.273 14.71,-16 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path51" />
+    <path
+       d="m 2466,574 c 0,-8.727 -6.69,-16 -14.71,-16 -8.03,0 -14.72,7.273 -14.72,16 0,8.727 6.69,16 14.72,16 8.02,0 14.71,-7.273 14.71,-16 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path53" />
+    <path
+       d="m 2466,574 c 0,-8.727 -6.69,-16 -14.71,-16 h -53.58 c -8.02,0 -14.71,7.273 -14.71,16 0,8.727 6.69,16 14.71,16 h 53.58 c 8.02,0 14.71,-7.273 14.71,-16 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path55" />
+    <path
+       d="m 2466,574 c 0,-8.727 -6.69,-16 -14.71,-16 -8.03,0 -14.72,7.273 -14.72,16 0,8.727 6.69,16 14.72,16 8.02,0 14.71,-7.273 14.71,-16 z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path57" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 V 14.536 C 32,6.60557 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,1409)"
+       id="path59" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 C 32,6.60557 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,1409)"
+       id="path61" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 V 14.536 C 32,6.60557 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,1409)"
+       id="path63" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 C 32,6.60557 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,1409)"
+       id="path65" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 V 14.536 C 32,6.60557 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,1116)"
+       id="path67" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 C 32,6.60557 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,1116)"
+       id="path69" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 V 14.536 C 32,6.60557 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,1116)"
+       id="path71" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 C 32,6.60557 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,1116)"
+       id="path73" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 V 14.536 C 32,6.60557 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1943,839)"
+       id="path75" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 C 32,6.60557 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1943,839)"
+       id="path77" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 V 14.536 C 32,6.60557 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1943,839)"
+       id="path79" />
+    <path
+       d="M 16,0 C 7.27272,0 0,6.60557 0,14.536 c 0,7.9305 7.27272,14.5361 16,14.5361 8.7272,0 16,-6.6056 16,-14.5361 C 32,6.60557 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1943,839)"
+       id="path81" />
+    <path
+       d="M 16.5,0 C 7.5,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.5,14.5361 16.5,14.5361 9,0 16.5,-6.6056 16.5,-14.5361 V 14.536 C 33,6.60557 25.5,0 16.5,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,558)"
+       id="path83" />
+    <path
+       d="M 16.5,0 C 7.5,0 0,6.60557 0,14.536 0,22.4665 7.5,29.0721 16.5,29.0721 25.5,29.0721 33,22.4665 33,14.536 33,6.60557 25.5,0 16.5,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,558)"
+       id="path85" />
+    <path
+       d="M 16.5,0 C 7.5,0 0,6.60557 0,14.536 v 52.9281 c 0,7.9305 7.5,14.5361 16.5,14.5361 9,0 16.5,-6.6056 16.5,-14.5361 V 14.536 C 33,6.60557 25.5,0 16.5,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,558)"
+       id="path87" />
+    <path
+       d="M 16.5,0 C 7.5,0 0,6.60557 0,14.536 0,22.4665 7.5,29.0721 16.5,29.0721 25.5,29.0721 33,22.4665 33,14.536 33,6.60557 25.5,0 16.5,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,1945,558)"
+       id="path89" />
+    <path
+       d="M 2491.09,795.1 1910,793"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="7.16646, 7.16646"
+       fill="none"
+       fill-rule="evenodd"
+       id="path91" />
+    <path
+       d="M 16.5,0 C 7.5,0 0,4.99443 0,10.9906 v 40.0186 c 0,5.9962 7.5,10.9907 16.5,10.9907 9,0 16.5,-4.9945 16.5,-10.9907 V 10.9906 C 33,4.99443 25.5,0 16.5,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,382)"
+       id="path93" />
+    <path
+       d="M 16.5,0 C 7.5,0 0,4.99443 0,10.9906 c 0,5.9962 7.5,10.9906 16.5,10.9906 9,0 16.5,-4.9944 16.5,-10.9906 C 33,4.99443 25.5,0 16.5,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,382)"
+       id="path95" />
+    <path
+       d="M 16.5,0 C 7.5,0 0,4.99443 0,10.9906 v 40.0186 c 0,5.9962 7.5,10.9907 16.5,10.9907 9,0 16.5,-4.9945 16.5,-10.9907 V 10.9906 C 33,4.99443 25.5,0 16.5,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,382)"
+       id="path97" />
+    <path
+       d="M 16.5,0 C 7.5,0 0,4.99443 0,10.9906 c 0,5.9962 7.5,10.9906 16.5,10.9906 9,0 16.5,-4.9944 16.5,-10.9906 C 33,4.99443 25.5,0 16.5,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,382)"
+       id="path99" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 v 40.0186 c 0,5.9962 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9945 16,-10.9907 V 10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2040,714)"
+       id="path101" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 c 0,5.9962 7.27272,10.9906 16,10.9906 8.7272,0 16,-4.9944 16,-10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2040,714)"
+       id="path103" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 v 40.0186 c 0,5.9962 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9945 16,-10.9907 V 10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2040,714)"
+       id="path105" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 c 0,5.9962 7.27272,10.9906 16,10.9906 8.7272,0 16,-4.9944 16,-10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2040,714)"
+       id="path107" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 v 40.0186 c 0,5.9962 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9945 16,-10.9907 V 10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,1389)"
+       id="path109" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 c 0,5.9962 7.27272,10.9906 16,10.9906 8.7272,0 16,-4.9944 16,-10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,1389)"
+       id="path111" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 v 40.0186 c 0,5.9962 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9945 16,-10.9907 V 10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,1389)"
+       id="path113" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 c 0,5.9962 7.27272,10.9906 16,10.9906 8.7272,0 16,-4.9944 16,-10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,1389)"
+       id="path115" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 v 40.0186 c 0,5.9962 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9945 16,-10.9907 V 10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,1389)"
+       id="path117" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 c 0,5.9962 7.27272,10.9906 16,10.9906 8.7272,0 16,-4.9944 16,-10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,1389)"
+       id="path119" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 v 40.0186 c 0,5.9962 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9945 16,-10.9907 V 10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,1389)"
+       id="path121" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99443 0,10.9906 c 0,5.9962 7.27272,10.9906 16,10.9906 8.7272,0 16,-4.9944 16,-10.9906 C 32,4.99443 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2038,1389)"
+       id="path123" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99446 0,10.9907 v 40.0188 c 0,5.9963 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9944 16,-10.9907 V 10.9907 C 32,4.99446 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2042,925)"
+       id="path125" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99446 0,10.9907 c 0,5.9962 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9945 16,-10.9907 C 32,4.99446 24.7272,0 16,0 Z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2042,925)"
+       id="path127" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99446 0,10.9907 v 40.0188 c 0,5.9963 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9944 16,-10.9907 V 10.9907 C 32,4.99446 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2042,925)"
+       id="path129" />
+    <path
+       d="M 16,0 C 7.27272,0 0,4.99446 0,10.9907 c 0,5.9962 7.27272,10.9907 16,10.9907 8.7272,0 16,-4.9945 16,-10.9907 C 32,4.99446 24.7272,0 16,0 Z"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0,1,1,0,2042,925)"
+       id="path131" />
+    <path
+       d="m 2478,276.75262 h 91.9289"
+       stroke="#000000"
+       stroke-width="3.89279"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path133" />
+    <path
+       d="M 0,0 3.60892e-4,125.583"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,2222,1615.58)"
+       id="path135" />
+    <path
+       d="m 2400,1617 h 47.21"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path137" />
+    <path
+       d="M 0,0 3.60892e-4,83.875"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,2422,1615.88)"
+       id="path139" />
+    <path
+       d="M 2421.56,1617.07 2386,1544"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path141" />
+    <path
+       d="M 0,0 3.60892e-4,105.188"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,2447,1617.19)"
+       id="path143" />
+    <path
+       d="M 2399.87,1616.12 2365,1547"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path145" />
+    <path
+       d="M 0,0 0.229167,94.875"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,1962,1616.88)"
+       id="path147" />
+    <path
+       d="m 1962,1617 h 47.21"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path149" />
+    <path
+       d="M 0,0 36.3227,69.3476"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,2010,1616.35)"
+       id="path151" />
+    <path
+       d="M 0,0 33.2295,75.1537"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,1988,1617.15)"
+       id="path153" />
+    <path
+       d="M 0,0 3.60892e-4,82.7151"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,1988,1616.72)"
+       id="path155" />
+    <path
+       d="M 0,0 3.60892e-4,125.583"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,2179,1615.58)"
+       id="path157" />
+    <path
+       d="m 2179,1490 h 42.4"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path159" />
+    <path
+       d="m 2490,387 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path161" />
+    <path
+       d="m 2490,516 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path163" />
+    <path
+       d="m 2490,644 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path165" />
+    <path
+       d="m 2490,772 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path167" />
+    <path
+       d="m 2490,1306 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path169" />
+    <path
+       d="m 2490,1435 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path171" />
+    <path
+       d="m 2490,1178 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path173" />
+    <path
+       d="m 2490,1050 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path175" />
+    <path
+       d="m 2490,920 h 80.29"
+       stroke="#000000"
+       stroke-width="3.6378"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path177" />
+  </g>
+</svg>

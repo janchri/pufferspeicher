@@ -14,7 +14,6 @@ void setup()
   while (!Serial)
     yield();
 
-  // Initialize SPIFFS
   if (!LittleFS.begin()) {
     Serial.println("[LittleFS] : An error has occurred while mounting.");
   }
@@ -24,7 +23,6 @@ void setup()
   Ntp.init();
   WebApi.init();
   Sensors.init();
-
   Mqtt.init();
 }
 
@@ -33,6 +31,5 @@ void loop()
   Network.loop();
   Sensors.loop();
   WebApi.loop();
-
   Mqtt.loop();
 }

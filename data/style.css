@@ -1,25 +1,63 @@
 html {
-    font-family: Helvetica;
-    display: inline-block;
-    text-align: center;
 }
 
-div#main {
-    width: min-content;
+body{
+    text-align: left;
 }
 
-div#puffer {
-    background-image: url('puffer.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    width: 223px;
-    height: 453px;
+div.main {
+    width: 100vh; 
+    height: 100vh;
 }
 
-div#sensors {
-    padding-top: 3px;
+div#header h1{
+    font-size: 5vh;
 }
 
-p.sensor {
-    padding-top: 3px
+img#puffer_img{
+    width: 35vh; 
+    height: 80vh;
+    margin-top: 2.5vh;
+    margin-left: -0.7vh;
 }
+
+div#rectangle {
+    float: left;
+    border-radius: 5vh;
+    border: 0.5vh solid black;
+    width: 30vh; 
+    height: 77vh;
+    background-image: linear-gradient(to top, #0064ff, #a147e2, #da18b9, #f70089, #ff005a, #ff2e44, #ff4b2b, #ff6400, #ff8900, #fff000);
+}
+
+div.sensors {
+    margin-left: 5vh;
+    float: left;
+}
+
+p {
+    font-size: 3vh;
+}
+
+p.top_first {
+    margin-top: 0vh;
+    margin-bottom: -1vh;
+}
+
+p.top {
+    margin-bottom: 3.7vh;
+}
+
+p.btm_first {
+    margin-top: 4.5vh;
+    margin-bottom: 3.9vh;
+}
+
+p.btm {
+    margin-bottom: 3.7vh;
+}
+
+div#footer{
+    height: 5vh;
+}
+

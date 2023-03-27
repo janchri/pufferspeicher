@@ -26,6 +26,7 @@ void onWsEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventTyp
 void WebApiClass::init()
 {
     Serial.println(F("[WebApi] :  Initializing..."));
+    AsyncElegantOTA.begin(&_server); 
     _ws.onEvent(onWsEvent);
     _server.addHandler(&_ws);
     using std::placeholders::_1;
@@ -33,13 +34,12 @@ void WebApiClass::init()
 
     _server.serveStatic("/", LittleFS, "/").setDefaultFile("index.html");
 
-    AsyncElegantOTA.begin(&_server); 
     _server.begin();
 }
 
 void WebApiClass::loop()
 {
-    if (millis() - _lastWsCleanup > 1000)
+    if (millis() - _lastWsCleanup > WS_TIMEOUT_PUBLISH*0.5)
     {
         _ws.cleanupClients();
         _lastWsCleanup = millis();
@@ -50,7 +50,7 @@ void WebApiClass::loop()
     }
     if (millis() - _lastWsPublish > WS_TIMEOUT_PUBLISH)
     {
-        DynamicJsonDocument root(4096);
+        DynamicJsonDocument root(1024U);
         JsonVariant var = root;
         generateJsonResponse(var);
         String buffer;
@@ -65,7 +65,7 @@ void WebApiClass::loop()
 
 void WebApiClass::onSensorsGet(AsyncWebServerRequest *request)
 {
-    AsyncJsonResponse *response = new AsyncJsonResponse(false, 4096U);
+    AsyncJsonResponse *response = new AsyncJsonResponse(false, 1024U);
     JsonVariant root = response->getRoot();
 
     generateJsonResponse(root);

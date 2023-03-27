@@ -2,43 +2,33 @@
 <html>
 
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <meta charset="UTF-8">
   <title>Der Super Puffer</title>
-  <script>
-    const ws = new WebSocket("ws://192.168.178.51/ws", "chat");
-    ws.onopen = function (openEvent) {
-      console.log("WebSocket ist mit dem " + ws.protocol + " Protokoll geöffnet");
-      ws.send("Hello Server!");
-    }
-    ws.onmessage = function (messageEvent) {
-      var sensors = JSON.parse(messageEvent.data);
-      for (let i in sensors.sensor) {
-        document.getElementById(sensors.sensor[i].sensor_id).innerHTML = sensors.sensor[i].sensor_tmp;
-      }
-    };
-    ws.onclose = function (closeEvent) {
-      console.log("WebSocket wurde geschlossen");
-    };
-  </script>
+  <script type="text/javascript" src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div id="main">
-    <h1>Der Super Puffer</h1>
-    <div id="puffer">
-      <div id="sensors">
-        <p class="sensor" , id="289CDB22602206A3"></p>
-        <p class="sensor" , id="2842605C602206F6"></p>
-        <p class="sensor" , id="28F713436022069B"></p>
-        <p class="sensor" , id="281D649A602206D3"></p>
-        <p class="sensor" , id="288FCA0F602206FD"></p>
-        <p class="sensor" , id="2869D16A6022067B"></p>
-        <p class="sensor" , id="2861516D60220697"></p>
-        <p class="sensor" , id="28E8A6686022069D"></p>
-        <p class="sensor" , id="28D9F3696022068F"></p>
-        <p class="sensor" , id="286BA98C60220606"></p>
-      </div>
+  <div class="main">
+    <div id="header">
+      <h1>Warmwasser Puffer</h1>
+    </div>
+    <div id="rectangle">
+      <img src="puffer_transparent.png" id="puffer_img">
+    </div>
+    <div class="sensors">
+      <p class="top_first" id="289CDB22602206A3">00.00</p>
+      <p class="top" id="2842605C602206F6">11.11</p>
+      <p class="top" id="28F713436022069B">22.22</p>
+      <p class="top" id="281D649A602206D3">33.33</p>
+      <p class="top" id="288FCA0F602206FD">44.44</p>
+      <p class="btm_first" id="2869D16A6022067B">55.55</p>
+      <p class="btm" id="2861516D60220697">66.66</p>
+      <p class="btm" id="28E8A6686022069D">77.77</p>
+      <p class="btm" id="28D9F3696022068F">88.88</p>
+      <p class="btm" id="286BA98C60220606">99.99</p>
+    </div>
+    <div id="footer">
     </div>
   </div>
 </body>

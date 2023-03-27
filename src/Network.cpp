@@ -1,6 +1,7 @@
 
 #include "Network.h"
 #include "defaults.h"
+#include "credentials.h"
 #include "Configuration.h"
 
 NetworkClass Network;

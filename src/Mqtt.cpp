@@ -2,6 +2,7 @@
 #include "Network.h"
 #include "Sensors.h"
 #include "defaults.h"
+#include "credentials.h"
 
 MqttClass Mqtt;
 WiFiClient wiFiClient;

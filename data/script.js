@@ -1,6 +1,9 @@
+var sensors_id = ['289CDB22602206A3','2842605C602206F6','28F713436022069B','281D649A602206D3','288FCA0F602206FD','2869D16A6022067B','2861516D60220697','28E8A6686022069D','28D9F3696022068F','286BA98C60220606'];
+var sensors_tmp = [95, 90, 60, 55, 50, 40, 35, 30, 27, 22];
+
 var loc = window.location;
-//const webSocketUrl = "ws://"+loc.host+"/ws";
-const webSocketUrl = "ws://192.168.178.51/ws";
+const webSocketUrl = "ws://"+loc.host+"/ws";
+//const webSocketUrl = "ws://192.168.178.51/ws";
 const ws = new WebSocket(webSocketUrl);
 ws.onopen = function (openEvent) {
     ws.send("Hello Server!");
@@ -9,30 +12,24 @@ ws.onmessage = function (messageEvent) {
     console.log("...refresh...");
     var sensors = JSON.parse(messageEvent.data);
     for (let i in sensors.sensor) {
-        document.getElementById(sensors.sensor[i].sensor_id).innerHTML = sensors.sensor[i].sensor_tmp;
+        sensors_tmp[sensors_id.indexOf(sensors.sensor[i].sensor_id)] = sensors.sensor[i].sensor_tmp;
     }
-    colorWarmWaterBoiler([sensors.sensor[0].sensor_tmp,
-            sensors.sensor[1].sensor_tmp,
-            sensors.sensor[2].sensor_tmp,
-            sensors.sensor[3].sensor_tmp,
-            sensors.sensor[4].sensor_tmp,
-            sensors.sensor[5].sensor_tmp,
-            sensors.sensor[6].sensor_tmp,
-            sensors.sensor[7].sensor_tmp,
-            sensors.sensor[8].sensor_tmp,
-            sensors.sensor[9].sensor_tmp]);
+    updateView();
 };
 ws.onclose = function (closeEvent) {
     console.log("WebSocket wurde geschlossen");
 };
 
-function colorWarmWaterBoiler(temps){
-    document.getElementById("rectangle").style.background = getLinearGradient(temps);
+function updateView(){
+    for (let i in sensors_tmp){
+        document.getElementById(sensors_id[i]).innerHTML = sensors_tmp[i];
+    }
+    document.getElementById("rectangle").style.background = getLinearGradient(sensors_tmp);
 }
 
 function getLinearGradient(temps) {
     var perc = [20, 30, 40, 50, 55, 70, 75, 80, 85, 95];
-    var str = 'linear-gradient(to top';
+    var str = 'linear-gradient(to bottom';
     for(let i in temps){
         str += ',hsl(' +[getHue(temps[i]), '100%', '50%'] + ')'+perc[i]+'%';
     }
@@ -47,7 +44,7 @@ function getHue(currTemp) {
   // following hsl wheel counterclockwise from 0
   // to go clockwise, make maxHsl and minHsl negative 
   var maxHsl = 400; // maxHsl maps to max temp (here: 20deg past 360)
-  var minHsl = 220; //  minhsl maps to min temp counter clockwise
+  var minHsl = 250; //  minhsl maps to min temp counter clockwise
   var rngHsl = maxHsl - minHsl; // = 210
 
   var maxTemp = 95;

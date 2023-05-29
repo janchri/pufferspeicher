@@ -6,58 +6,49 @@ body{
 }
 
 div.main {
-    width: 100vh; 
-    height: 100vh;
+    width: 100svh; 
+    height: 100svh;
 }
 
 div#header h1{
-    font-size: 5vh;
+    font-size: 5svh;
 }
 
 img#puffer_img{
-    width: 35vh; 
-    height: 80vh;
-    margin-top: 2.5vh;
-    margin-left: -0.7vh;
+    width: 35svh; 
+    height: 80svh;
+    margin-top: 2.5svh;
+    margin-left: -0.7svh;
 }
 
 div#rectangle {
     float: left;
-    border-radius: 5vh;
-    border: 0.5vh solid black;
-    width: 30vh; 
-    height: 77vh;
+    border-radius: 5svh;
+    border: 0.5svh solid black;
+    width: 30svh; 
+    height: 77svh;
     background-image: linear-gradient(to top, #0064ff, #a147e2, #da18b9, #f70089, #ff005a, #ff2e44, #ff4b2b, #ff6400, #ff8900, #fff000);
 }
 
 div.sensors {
-    margin-left: 5vh;
+    margin-left: 2svh;
     float: left;
 }
 
 p {
-    font-size: 3vh;
+    font-size: 3svh;
 }
 
 p.top_first {
-    margin-top: 0vh;
-    margin-bottom: -1vh;
+    margin-top: 4svh;
+    margin-bottom: 3.2svh;
 }
 
 p.top {
-    margin-bottom: 3.7vh;
-}
-
-p.btm_first {
-    margin-top: 4.5vh;
-    margin-bottom: 3.9vh;
-}
-
-p.btm {
-    margin-bottom: 3.7vh;
+    margin-bottom: 3.2svh;
 }
 
 div#footer{
-    height: 5vh;
+    height: 5svh;
 }
 

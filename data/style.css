@@ -1,54 +1,84 @@
-html {
-}
-
-body{
-    text-align: left;
+div.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 div.main {
-    width: 100svh; 
-    height: 100svh;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
-div#header h1{
-    font-size: 5svh;
+.header h1 {
+    font-size: 3.5dvh;
 }
 
-img#puffer_img{
-    width: 35svh; 
-    height: 80svh;
-    margin-top: 2.5svh;
-    margin-left: -0.7svh;
+div.puffer {
+    height: 100%;
 }
 
 div#rectangle {
     float: left;
+    display: block;
+    width: 30svh;
+    height: 77svh;
     border-radius: 5svh;
     border: 0.5svh solid black;
-    width: 30svh; 
-    height: 77svh;
     background-image: linear-gradient(to top, #0064ff, #a147e2, #da18b9, #f70089, #ff005a, #ff2e44, #ff4b2b, #ff6400, #ff8900, #fff000);
 }
 
+div.grafana {
+    display: flex;
+    flex-grow: 1;
+}
+.iframe {
+    flex-grow: 1; 
+    border: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+div.overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+img.puffer_img {
+    width: 35svh;
+    height: 77svh;
+}
+
 div.sensors {
-    margin-left: 2svh;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 77svh;
+    max-height: 77svh;
+    margin-left: -2.5svh;
 }
 
-p {
-    font-size: 3svh;
+div.sensor {
+    flex-basis: auto;
+    flex-grow: 1;
+    display: flex;
 }
 
-p.top_first {
-    margin-top: 4svh;
-    margin-bottom: 3.2svh;
+span.value {
+    align-self: center;
+    font-size: 2dvh;
 }
 
-p.top {
-    margin-bottom: 3.2svh;
+img.puffer_fuesse {
+    height: 65svh;
+    margin-top: -3.3svh;
+    margin-left: 1.2svh;
 }
 
-div#footer{
+div.footer {
     height: 5svh;
 }
-

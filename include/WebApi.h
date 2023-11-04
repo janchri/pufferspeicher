@@ -10,11 +10,11 @@ public:
     void init();
     void loop();
     
+    AsyncWebServer _server;
+    AsyncWebSocket _ws;
 private:
     uint32_t _lastWsCleanup = 0;
     uint32_t _lastWsPublish = 0;
-    AsyncWebServer _server;
-    AsyncWebSocket _ws;
     void onSensorsGet(AsyncWebServerRequest* request);
     void generateJsonResponse(JsonVariant& root);
 };

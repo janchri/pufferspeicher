@@ -1,84 +1,91 @@
-
 #include "Network.h"
+#include "Logger.h"
+
+#include <Ticker.h>
+#include <time.h>
+
 #include "defaults.h"
 #include "credentials.h"
 #include "Configuration.h"
 
+Ticker wifiReconnectTimer;
+
 NetworkClass Network;
+
+// Private prototypes
+void WiFiStationConnected(WiFiEvent_t event, WiFiEventInfo_t info);
+void WiFiGotIP(WiFiEvent_t event, WiFiEventInfo_t info);
+void WiFiStationDisconnected(WiFiEvent_t event, WiFiEventInfo_t info);
+void connectToWifi();
 
 NetworkClass::NetworkClass()
     : apIp(192, 168, 4, 1), apNetmask(255, 255, 255, 0)
 {
+    configTzTime(MY_TZ, NTP_SERVER_0, NTP_SERVER_1, NTP_SERVER_2);
+
     dnsServer.reset(new DNSServer());
 }
 
 void NetworkClass::init()
 {
-    using std::placeholders::_1;
+    WiFi.onEvent(WiFiStationConnected, WiFiEvent_t::ARDUINO_EVENT_WIFI_STA_CONNECTED);
+    WiFi.onEvent(WiFiGotIP, WiFiEvent_t::ARDUINO_EVENT_WIFI_STA_GOT_IP);
+    WiFi.onEvent(WiFiStationDisconnected, WiFiEvent_t::ARDUINO_EVENT_WIFI_STA_DISCONNECTED);
 
-    WiFi.onEvent(std::bind(&NetworkClass::NetworkEvent, this, _1));
-    setup();
-}
-
-void NetworkClass::setup()
-{
-    if (apEnabled)
-    {
-        WiFi.mode(WIFI_AP_STA);
-        WiFi.softAPConfig(apIp, apIp, apNetmask);
-        WiFi.softAP(AP_SSID, AP_PASSWORD);
-        dnsServer->setErrorReplyCode(DNSReplyCode::NoError);
-        dnsServer->start(DNS_PORT, "*", WiFi.softAPIP());
-        dnsServerStatus = true;
-    }
-    else
-    {
-        dnsServer->stop();
-        dnsServerStatus = false;
-        WiFi.hostname(HOSTNAME);
-        WiFi.setScanMethod(WIFI_ALL_CHANNEL_SCAN);
-        WiFi.setSortMethod(WIFI_CONNECT_AP_BY_SIGNAL);
-        WiFi.mode(WIFI_STA);
-        WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-    }
+    connectToWifi();
 }
 
 void NetworkClass::loop()
 {
-    if ((millis() - lastTimerCall) > WIFI_TIMEOUT_RECONNECT)
+    static uint32_t lastTimerCall = 0;
+    if ((millis() - lastTimerCall) > WIFI_TIMEOUT_CHECK_STATUS_MS)
     {
-        if (WiFi.localIP()[0] != 0)
+        if (isConnected())
         {
-            Serial.println(F("[WiFi] :  Connected"));
+            Logger.println(F("[WiFi]:  Connected"));
         }
         else
         {
-            Serial.println(F("[WiFi] : Not Connected"));
+            Logger.println(F("[WiFi]: Not Connected"));
         }
         lastTimerCall = millis();
     }
 }
 
-void NetworkClass::NetworkEvent(WiFiEvent_t event)
+bool NetworkClass::isConnected()
 {
-    switch (event)
-    {
-    case ARDUINO_EVENT_WIFI_STA_CONNECTED:
-        Serial.println(F("[WiFi] : WiFi connected"));
-        break;
-    case ARDUINO_EVENT_WIFI_STA_DISCONNECTED:
-        Serial.println(F("[WiFi] : WiFi disconnected"));
-        WiFi.reconnect();
-        break;
-    case ARDUINO_EVENT_WIFI_STA_GOT_IP:
-        Serial.printf("[WiFi] : WiFi got ip: %s\r\n", WiFi.localIP().toString().c_str());
-        Serial.println();
-        break;
-    default:
-        break;
-    }
+    return WiFi.localIP()[0] != 0;
 }
 
-bool NetworkClass::isConnected(){
-    return WiFi.localIP()[0] != 0;
+// Private functions
+void connectToWifi()
+{
+    // WiFi.mode(WIFI_AP_STA);
+    WiFi.mode(WIFI_STA);
+    // WiFi.setOutputPower(17); // 10dBm == 10mW, 14dBm = 25mW, 17dBm = 50mW, 20dBm = 100mW
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+}
+
+void WiFiStationConnected(WiFiEvent_t event, WiFiEventInfo_t info)
+{
+    Logger.println("[WiFi]: Connected to AP successfully!");
+}
+
+void WiFiGotIP(WiFiEvent_t event, WiFiEventInfo_t info)
+{
+    Logger.println("[WiFi]: WiFi connected");
+    Logger.println("[WiFi]: IP address: ");
+    Logger.println(WiFi.localIP().toString());
+}
+
+void WiFiStationDisconnected(WiFiEvent_t event, WiFiEventInfo_t info)
+{
+    Logger.println("[WiFi]: Disconnected from WiFi access point");
+    Logger.print("[WiFi]: WiFi lost connection. Reason: ");
+    Logger.println(info.wifi_sta_disconnected.reason);
+    Logger.println("[WiFi]: Trying to Reconnect");
+
+    // Logger.println("Disconnected from Wi-Fi.");
+    // wifiReconnectTimer.once(10, reconnectToWifi);
+    connectToWifi();
 }

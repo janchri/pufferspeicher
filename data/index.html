@@ -3,32 +3,63 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Der Super Puffer</title>
+  <title>Der Kombispeicher</title>
   <script type="text/javascript" src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div class="main">
-    <div id="header">
-      <h1>Kombispeicher 1000 Liter</h1>
+
+  <div class="header">
+    <h1>Kombispeicher 1T Liter</h1>
+  </div>
+  <div class="container">
+    <div class="main">
+      <div class="puffer">
+        <div id="rectangle">
+        </div>
+        <div class="overlay">
+          <img src="puffer_transparent.png" class="puffer_img">
+          <div class="sensors">
+            <div class="sensor" id="289CDB22602206A3">
+              <span class="value">100</span>
+            </div>
+            <div class="sensor" id="2842605C602206F6">
+              <span class="value">95</span>
+            </div>
+            <div class="sensor" id="28F713436022069B">
+              <span class="value">90</span>
+            </div>
+            <div class="sensor" id="281D649A602206D3">
+              <span class="value">80</span>
+            </div>
+            <div class="sensor" id="288FCA0F602206FD">
+              <span class="value">70</span>
+            </div>
+            <div class="sensor" id="2869D16A6022067B">
+              <span class="value">60</span>
+            </div>
+            <div class="sensor" id="2861516D60220697">
+              <span class="value">50</span>
+            </div>
+            <div class="sensor" id="28E8A6686022069D">
+              <span class="value">40</span>
+            </div>
+            <div class="sensor" id="28D9F3696022068F">
+              <span class="value">30</span>
+            </div>
+            <div class="sensor" id="286BA98C60220606">
+              <span class="value">20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="puffer_fuesse.png" class="puffer_fuesse">
+      </div>
     </div>
-    <div id="rectangle">
-      <img src="puffer_transparent.png" id="puffer_img">
-    </div>
-    <div class="sensors">
-      <p class="top_first" id="289CDB22602206A3">99.00</p>
-      <p class="top"       id="2842605C602206F6">99.11</p>
-      <p class="top"       id="28F713436022069B">99.22</p>
-      <p class="top"       id="281D649A602206D3">99.33</p>
-      <p class="top"       id="288FCA0F602206FD">99.44</p>
-      <p class="top"       id="2869D16A6022067B">99.55</p>
-      <p class="top"       id="2861516D60220697">99.66</p>
-      <p class="top"       id="28E8A6686022069D">99.77</p>
-      <p class="top"       id="28D9F3696022068F">99.88</p>
-      <p class="top"       id="286BA98C60220606">99.99</p>
-    </div>
-    <div id="footer">
+    <div class="grafana">
+      <iframe src="http://raspbyd:3000/grafana/d-solo/H5h7d2VSk/puffer?orgId=1&refresh=5s&theme=light&panelId=2" class="iframe" frameborder="0"></iframe>
     </div>
   </div>
 </body>

@@ -1,6 +1,7 @@
 #include "Mqtt.h"
 #include "Network.h"
 #include "Sensors.h"
+#include "Logger.h"
 #include "defaults.h"
 #include "credentials.h"
 
@@ -23,19 +24,19 @@ void MqttClass::setup()
 {
     if (Network.isConnected())
     {
-        Serial.println("[MQTT] : Connecting to MQTT...");
+        Logger.println("[MQTT]: Connecting to MQTT...");
         if (!mqttClient.connect())
         {
-            Serial.println("[MQTT] : Connecting failed.");
+            Logger.println("[MQTT]: Connecting failed.");
         }
         else
         {
-            Serial.println("[MQTT] : Connected.");
+            Logger.println("[MQTT]: Connected.");
         }
     }
     else
     {
-        Serial.println("[MQTT] : Error no WiFi Connection");
+        Logger.println("[MQTT]: Error no WiFi Connection");
     }
 }
 
@@ -45,18 +46,18 @@ void MqttClass::loop()
     {
         if (!mqttClient.connected())
         {
-            Serial.println(F("[MQTT] : Not connected."));
+            Logger.println(F("[MQTT] : Not connected."));
             setup();
         }
         else
         {
-            Serial.println(F("[MQTT] : Connected."));
+            Logger.println(F("[MQTT] : Connected."));
         }
         lastTimerReconnect = millis();
     }
     if ((millis() - lastTimerPublish) > MQTT_TIMEOUT_PUBLISH)
     {
-        Serial.println(F("[MQTT] : Publish data"));
+        Logger.println(F("[MQTT]: Publish data"));
         uint8_t count = 0;
         for (auto data : Sensors.sensor_data)
         {

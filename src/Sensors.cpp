@@ -1,4 +1,5 @@
 #include "Sensors.h"
+#include "Logger.h"
 
 SensorsClass Sensors;
 OneWire oneWire(ONE_WIRE_BUS);
@@ -22,16 +23,16 @@ void SensorsClass::loop()
     if ((millis() - lastSensorRead) > SENSORS_TIMEOUT_READ)
     {
         tmp_sensor.requestTemperatures();
-        Serial.print(F("[Sensors] : "));
         uint8_t count = 0;
+        String msg = "[Sensors]:";
         for(auto address : sensor_addresses){
-            Serial.print(tmp_sensor.getTempC(address.data()));
-            Serial.print(F(" | "));
             sensor_data[count] = tmp_sensor.getTempC(address.data());
             count++;
+            msg += tmp_sensor.getTempC(address.data());
+            msg += F(" | ");
         }
-        Serial.println();
         lastSensorRead = millis();
+        Logger.println(msg);
     }
     if ((millis() - lastSensorSearch) > SENSORS_TIMEOUT_SEARCH)
     {

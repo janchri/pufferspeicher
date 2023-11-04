@@ -1,0 +1,260 @@
+{
+    "annotations": {
+        "list": [
+            {
+                "builtIn": 1,
+                "datasource": {
+                    "type": "grafana",
+                    "uid": "-- Grafana --"
+                },
+                "enable": true,
+                "hide": true,
+                "iconColor": "rgba(0, 211, 255, 1)",
+                "name": "Annotations & Alerts",
+                "target": {
+                    "limit": 100,
+                    "matchAny": false,
+                    "tags": [],
+                    "type": "dashboard"
+                },
+                "type": "dashboard"
+            }
+        ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 2,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+        {
+            "datasource": {
+                "type": "influxdb",
+                "uid": "_ZStB0o4z"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "palette-classic"
+                    },
+                    "custom": {
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "drawStyle": "line",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom": {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution": {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking": {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle": {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    },
+                    "unit": "degree"
+                },
+                "overrides": [
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.286BA98C60220606 value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S0"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.28D9F3696022068F value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S1"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.28E8A6686022069D value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S2"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.2861516D60220697 value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S3"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.2869D16A6022067B value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S4"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.288FCA0F602206FD value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S5"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.281D649A602206D3 value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S6"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.28F713436022069B value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S7"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.2842605C602206F6 value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S8"
+                            }
+                        ]
+                    },
+                    {
+                        "matcher": {
+                            "id": "byName",
+                            "options": "mqtt.0.Puffer.sensor.289CDB22602206A3 value"
+                        },
+                        "properties": [
+                            {
+                                "id": "displayName",
+                                "value": "S9"
+                            }
+                        ]
+                    },
+                ]
+            },
+            "gridPos": {
+                "h": 16,
+                "w": 24,
+                "x": 0,
+                "y": 0
+            },
+            "id": 2,
+            "options": {
+                "legend": {
+                    "calcs": [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip": {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "influxdb",
+                        "uid": "_ZStB0o4z"
+                    },
+                    "query": "from(bucket: \"iobroker\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.281D649A602206D3\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.2842605C602206F6\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.2861516D60220697\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.2869D16A6022067B\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.286BA98C60220606\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.288FCA0F602206FD\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.289CDB22602206A3\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.28D9F3696022068F\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.28E8A6686022069D\" or r[\"_measurement\"] == \"mqtt.0.Puffer.sensor.28F713436022069B\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                    "refId": "A"
+                }
+            ],
+            "title": "Puffer",
+            "type": "timeseries"
+        }
+    ],
+    "refresh": "5s",
+    "schemaVersion": 37,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+        "list": []
+    },
+    "time": {
+        "from": "now-6h",
+        "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "Puffer",
+    "uid": "H5h7d2VSk",
+    "version": 3,
+    "weekStart": ""
+}

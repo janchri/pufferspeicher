@@ -17,7 +17,7 @@ public:
     
 private:
     void setup();
-    uint32_t lastSensorRead = 0;
+    uint32_t lastSensorRead = SENSORS_TIMEOUT_READ + 1;
     uint32_t lastSensorSearch = 0;
 };
 

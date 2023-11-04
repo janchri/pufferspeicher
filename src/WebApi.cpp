@@ -1,5 +1,6 @@
 #include "WebApi.h"
 #include "defaults.h"
+#include "Logger.h"
 #include "Sensors.h"
 #include <AsyncElegantOTA.h>
 
@@ -14,18 +15,18 @@ void onWsEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventTyp
 {
     if (type == WS_EVT_CONNECT)
     {
-        Serial.println("Websocket client connection received");
-        client->text("Hello from Puffer");
+        Logger.println(F("[WebApi]: Websocket client connection received"));
+        client->text(F("[WebApi]: Hello from Puffer"));
     }
     else if (type == WS_EVT_DISCONNECT)
     {
-        Serial.println("Client disconnected");
+        Logger.println(F("[WebApi]: Client disconnected"));
     }
 }
 
 void WebApiClass::init()
 {
-    Serial.println(F("[WebApi] :  Initializing..."));
+    Logger.println(F("[WebApi] :  Initializing..."));
     AsyncElegantOTA.begin(&_server); 
     _ws.onEvent(onWsEvent);
     _server.addHandler(&_ws);

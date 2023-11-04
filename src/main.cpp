@@ -1,5 +1,6 @@
 
 #include "defaults.h"
+#include "Logger.h"
 
 #include "Network.h"
 #include "Ntp.h"
@@ -10,14 +11,12 @@
 
 void setup()
 {
-  Serial.begin(SERIAL_BAUDRATE);
-  while (!Serial)
-    yield();
+  Logger.begin();
 
   if (!LittleFS.begin()) {
-    Serial.println("[LittleFS] : An error has occurred while mounting.");
+    Logger.println("[LittleFS] : An error has occurred while mounting.");
   }
-  Serial.println("[LittleFS] :  ... successfully mounted.");
+  Logger.println("[LittleFS] :  ... successfully mounted.");
 
   Network.init();
   Ntp.init();
@@ -28,6 +27,7 @@ void setup()
 
 void loop()
 {
+  delay(1);
   Network.loop();
   Sensors.loop();
   WebApi.loop();

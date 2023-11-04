@@ -2,19 +2,24 @@ var sensors_id = ['289CDB22602206A3','2842605C602206F6','28F713436022069B','281D
 var sensors_tmp = [95, 90, 60, 55, 50, 40, 35, 30, 27, 22];
 
 var loc = window.location;
-const webSocketUrl = "ws://"+loc.host+"/ws";
-//const webSocketUrl = "ws://192.168.178.51/ws";
+//const webSocketUrl = "ws://"+loc.host+"/ws";
+const webSocketUrl = "ws://192.168.178.51/ws";
 const ws = new WebSocket(webSocketUrl);
 ws.onopen = function (openEvent) {
     ws.send("Hello Server!");
 }
 ws.onmessage = function (messageEvent) {
     console.log("...refresh...");
-    var sensors = JSON.parse(messageEvent.data);
-    for (let i in sensors.sensor) {
-        sensors_tmp[sensors_id.indexOf(sensors.sensor[i].sensor_id)] = sensors.sensor[i].sensor_tmp;
+    try{
+        var sensors = JSON.parse(messageEvent.data);
+        for (let i in sensors.sensor) {
+            sensors_tmp[sensors_id.indexOf(sensors.sensor[i].sensor_id)] = sensors.sensor[i].sensor_tmp;
+        }
+        updateView();
+    } catch(e) {
+        console.log(messageEvent.data);
     }
-    updateView();
+    
 };
 ws.onclose = function (closeEvent) {
     console.log("WebSocket wurde geschlossen");
@@ -22,7 +27,7 @@ ws.onclose = function (closeEvent) {
 
 function updateView(){
     for (let i in sensors_tmp){
-        document.getElementById(sensors_id[i]).innerHTML = sensors_tmp[i];
+        document.getElementById(sensors_id[i]).getElementsByClassName('value')[0].innerHTML = sensors_tmp[i];
     }
     document.getElementById("rectangle").style.background = getLinearGradient(sensors_tmp);
 }
@@ -34,7 +39,7 @@ function getLinearGradient(temps) {
         str += ',hsl(' +[getHue(temps[i]), '100%', '50%'] + ')'+perc[i]+'%';
     }
     str += ')';
-    console.log(str);
+    //console.log(str);
     return str;
     //return 'linear-gradient(to top,'+'hsl(' +[getHue(temps[0]), '100%', '50%'] + ')'+' 0%,'+'hsl(' +[getHue(temps[9]), '100%', '50%'] + ')'+' 100%)';
 }

@@ -9,7 +9,7 @@
 #define NUMBER_OF_TMP_SENSORS 10
 
 #define HOSTNAME "Puffer"
-#define WIFI_TIMEOUT_CHECK_STATUS_MS 499u*1000u
+#define WIFI_TIMEOUT_CHECK_STATUS_MS 60u*1000u
 
 #define AP_SSID "Puffer"
 #define AP_PASSWORD ""
@@ -23,9 +23,9 @@
 #define HTTP_PORT 80
 
 #define SENSORS_TIMEOUT_READ 60u*1000u
-#define SENSORS_TIMEOUT_SEARCH 300000u
+#define SENSORS_TIMEOUT_SEARCH 1000u*1000u
 
-#define WS_TIMEOUT_PUBLISH 15u*1000u
+#define WS_TIMEOUT_PUBLISH 5u*1000u
 
 #define NTP_SERVER_0 "at.pool.ntp.org"
 #define NTP_SERVER_1 "at.pool.ntp.org"

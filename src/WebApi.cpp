@@ -40,14 +40,14 @@ void WebApiClass::init()
 
 void WebApiClass::loop()
 {
-    if (millis() - _lastWsCleanup > WS_TIMEOUT_PUBLISH*0.5)
-    {
-        _ws.cleanupClients();
-        _lastWsCleanup = millis();
-    }
     if (_ws.count() == 0)
     {
         return;
+    }
+    if (millis() - _lastWsCleanup > WS_TIMEOUT_PUBLISH*0.3)
+    {
+        _ws.cleanupClients();
+        _lastWsCleanup = millis();
     }
     if (millis() - _lastWsPublish > WS_TIMEOUT_PUBLISH)
     {

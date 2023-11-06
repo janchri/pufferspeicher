@@ -47,6 +47,7 @@ void NetworkClass::loop()
         else
         {
             Logger.println(F("[WiFi]: Not Connected"));
+            connectToWifi();
         }
         lastTimerCall = millis();
     }
@@ -60,9 +61,12 @@ bool NetworkClass::isConnected()
 // Private functions
 void connectToWifi()
 {
-    // WiFi.mode(WIFI_AP_STA);
+    WiFi.disconnect();
+    WiFi.persistent(false);
+
+    //WiFi.mode(WIFI_AP_STA);
     WiFi.mode(WIFI_STA);
-    // WiFi.setOutputPower(17); // 10dBm == 10mW, 14dBm = 25mW, 17dBm = 50mW, 20dBm = 100mW
+    WiFi.setTxPower(WIFI_POWER_19dBm); // 10dBm == 10mW, 14dBm = 25mW, 17dBm = 50mW, 20dBm = 100mW
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 }
 
